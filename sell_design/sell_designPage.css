@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 20px;
+    align-items: center;
+}
+
+.table_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design{
+    padding: 20px;
+    border: solid black 2px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    font-size: 10px;
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+}
+
+#d1{
+    left: 10px;
+    margin: 10px;
+    background-color: #e48257;
+    animation-name: myanimationd1;
+}
+
+#d2{
+    right: 250px;
+    margin: 20px;
+    top: 370px;
+    background-color:#6e7c7c;
+    animation-name: myanimationd2;
+}
+
+#d3{
+    left: 500px;
+    margin: 30px;
+    top: 570px;
+    background-color:#025955;
+    animation-name: myanimationd3;
+}
+
+@keyframes myanimationd1 {
+    0% {background-color: #440a67;margin: 20px;left:20px}
+    10% {background-color: #3a6351;margin: 20px;left:1550px}
+}
+
+@keyframes myanimationd2 {
+    0% {background-color: #c8c6a7;margin: 30px;right:20px}
+    10% {background-color: #92967d;margin: 20px;right:1650px}
+}
+
+@keyframes myanimationd3 {
+    0% {background-color: red;margin: 40px;left:20px}
+    10% {background-color: #fde8cd;margin: 20px;left:1750px}
+}
+
+footer {
+    background: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
