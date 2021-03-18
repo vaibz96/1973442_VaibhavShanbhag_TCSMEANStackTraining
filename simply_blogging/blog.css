@@ -1,0 +1,17 @@
+.container{
+    margin: 100px auto;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.navbar{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.blog{
+    font-family: monospace;
+    margin-bottom: 50px;
+    font-size: x-large;
+    font-weight: 600;
+}
