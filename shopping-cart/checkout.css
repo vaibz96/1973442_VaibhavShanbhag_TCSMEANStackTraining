@@ -1,0 +1,39 @@
+.budgetList {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.budgetList thead tr {
+    background-color: #007580;
+    color: #ffffff;
+    text-align: left;
+}
+
+.budgetList th, td {
+    padding: 12px 15px;
+}
+
+.budgetList tbody tr {
+    border: 1px solid #dddddd;
+}
+
+.budgetList tbody tr:nth-of-type(even) {
+    background-color: #caf7e3;
+}
+.budgetList tbody tr:nth-of-type(odd) {
+    background-color: #9fd8df;
+}
+
+.budgetList tbody tr:last-of-type {
+    border-bottom: solid #009879;
+}
+
+#main{
+    border: solid red;
+    margin: 25px 25% 0 25%;
+}
+
