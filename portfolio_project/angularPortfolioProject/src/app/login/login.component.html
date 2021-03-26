@@ -1,0 +1,37 @@
+<div class="shadow-lg p-3 mb-5 bg-body rounded container">
+    <div class="d-flex justify-content-center">
+        <h2 class="fs-1">Login</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+            <div class="row mb-3">
+                <label class="form-label fs-2">User Name</label>
+                <div class="col-sm-12">
+                    <input class="form-control form-control-md" type="text" name="user" formControlName="user"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="form-label fs-2">Password</label>
+                <div class="col-sm-12"> 
+                    <input class="form-control form-control-md" type="password" name="pass" formControlName="pass"/>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input class="m-1 btn btn-success" type="submit" name="submit"/>
+                <input class="m-1 btn btn-warning" type="reset" name="reset"/>
+            </div>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center">
+        {{msg}}
+    </div>
+    <div class="d-flex justify-content-center">
+        <h2 class="m-2 fs-6"><b>Not a member yet?</b></h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <input class="m-2 btn btn-primary" type="button" value="Signup" (click)="signUpPage()"/>
+    </div>
+</div>
+
+
+

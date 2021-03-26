@@ -1,0 +1,43 @@
+<div class="shadow-lg p-3 mb-5 bg-body rounded container">
+    <div class="d-flex justify-content-center">
+        <h3> Welcome {{userValue}}</h3>
+    </div>
+    <div class="d-flex justify-content-center mb-3">
+        <form>
+            <div class="row mb-3">
+                <label class="form-label fs-2">Name</label>
+                <div class="col-sm-12">
+                    <input type="text" #sname/>
+                    <input type="button" value="Add User" (click)="addNameData(sname.value)"/>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="form-label fs-2">Contact</label>
+                <div class="col-sm-12">
+                    <input type="text" #uphone/>
+                    <input type="button" value="Add Phone" (click)="addPhoneData(uphone.value)"/>
+                </div>
+            </div>
+            <div>
+                <input class="btn btn-warning" type="reset" name="reset"/>
+            </div>
+            
+        </form>
+    </div>
+    <div class="row">
+        <table border="1" class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone No.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td *ngFor="let name of userNames">{{name}}</td>
+                <td *ngFor="let phone of userContacts">{{phone}}</td>
+              </tr>
+            </tbody> 
+        </table>
+    </div>
+</div>
