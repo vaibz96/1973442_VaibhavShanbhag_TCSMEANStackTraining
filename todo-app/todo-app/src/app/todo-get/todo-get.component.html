@@ -1,0 +1,18 @@
+<table class="table">
+    <thead class="table table-dark table-hover">
+      <tr>
+        <th scope="col" class='h1'>Emp Id</th>
+        <th scope="col" class='h1'>Name</th>
+        <th scope="col" class='h1'>Task</th>
+        <th scope="col" class='h1'>Deadline</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of todo">
+        <th scope="row" class='h3'>{{task.empId}}</th>
+        <td class='h3'>{{task.name}}</td>
+        <td class='h3'>{{task.task}}</td>
+        <td class='h3'>{{task.deadline}}</td>
+      </tr>
+    </tbody>
+  </table>

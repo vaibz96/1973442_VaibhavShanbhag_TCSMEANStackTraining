@@ -1,0 +1,32 @@
+{
+  "todo-list": [
+    {
+      "empId": "12345",
+      "name": "Vaibhav",
+      "task": "Code Review",
+      "deadline": "1st April",
+      "id": 1
+    },
+    {
+      "empId": "12346",
+      "name": "Tim",
+      "task": "Code Input",
+      "deadline": "2nd April",
+      "id": 2
+    },
+    {
+      "empId": "12347",
+      "name": "Rick",
+      "task": "Git Update",
+      "deadline": "3rd April",
+      "id": 3
+    },
+    {
+      "empId": "123",
+      "name": "Hiren",
+      "task": "Push Production",
+      "deadline": "5th April",
+      "id": 4
+    }
+  ]
+}
