@@ -1,0 +1,106 @@
+{
+    "quizzes":[
+        {
+            "id": 1,
+            "question": "What is Capital of India?",
+            "answer": [
+                { "option": "Delhi", "correct": true},
+                { "option": "Amhedabad", "correct": false},
+                { "option": "Punjab", "correct": false},
+                { "option": "Kerala", "correct": false}
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is Key Ingredient for Making Vegan Bread?",
+            "answer": [
+                { "option": "Cow Milk", "correct": false},
+                { "option": "Cheese", "correct": false},
+                { "option": "White Flour", "correct": true},
+                { "option": "Chicken", "correct": false}
+            ]
+        },
+        {
+            "id": 3,
+            "question": "In Cricket what do we use to hit a leather ball?",
+            "answer": [
+                { "option": "Bat", "correct": true},
+                { "option": "Pad", "correct": false},
+                { "option": "Stump", "correct": false},
+                { "option": "Bail", "correct": false}
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is National Bird of USA?",
+            "answer": [
+                { "option": "Bald Eagle", "correct": true},
+                { "option": "Crow", "correct": false},
+                { "option": "Sparrow", "correct": false},
+                { "option": "Chicken", "correct": false}
+            ]
+        },
+        {
+            "id": 5,
+            "question": "Largest State of USA?",
+            "answer": [
+                { "option": "Texas", "correct": false},
+                { "option": "Alaska", "correct": true},
+                { "option": "New Jersey", "correct": false},
+                { "option": "New York", "correct": false}
+            ]
+        },
+        {
+            "id": 6,
+            "question": "How big is the USA compared to the India?",
+            "answer": [
+                { "option": "3x", "correct": false},
+                { "option": "1x", "correct": false},
+                { "option": "3.5x", "correct": true},
+                { "option": "5x", "correct": false}
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is the most common acronym for full stack web development using Angular.js and Node.js?",
+            "answer": [
+                { "option": "MEN", "correct": false},
+                { "option": "MEAN", "correct": true},
+                { "option": "MERN", "correct": false},
+                { "option": "MONE", "correct": false}
+            ]
+        },
+        {
+            "id": 8,
+            "question": "AWS cloud service is owned by which Company?",
+            "answer": [
+                { "option": "Microsoft", "correct": false},
+                { "option": "Google", "correct": false},
+                { "option": "Amazon", "correct": true},
+                { "option": "Citrix", "correct": false}
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Jaguar Car is owned by which Company?",
+            "answer": [
+                { "option": "Tata", "correct": true},
+                { "option": "Mittal", "correct": false},
+                { "option": "Toyota", "correct": false},
+                { "option": "Reliance", "correct": false}
+            ]
+        },
+        {
+            "id": 10,
+            "question": "First person to introduce the word bug in coding?",
+            "answer": [
+                { "option": "Grace Hopper", "correct": true},
+                { "option": "Ada Lovelace", "correct": false},
+                { "option": "Margaret Hamilton", "correct": false},
+                { "option": "Ivanka Trump", "correct": false}
+            ]
+        }
+
+    ]
+
+}
