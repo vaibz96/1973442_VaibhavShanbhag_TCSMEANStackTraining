@@ -1,0 +1,49 @@
+<p>quiz works!</p>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-sm-8 offset-2">
+            <div *ngIf="counter < 10">
+                <p class="text-center h3 pb-5">{{ counter + 1 }} of {{ quiz.length }}</p>
+                <h1>
+                    {{quiz[counter].id}}<span>.</span> {{ quiz[counter].question }}
+                </h1>
+                <ul class="list-group" *ngFor="let question of quiz[counter].answer">
+                    <label>
+                        <li class="list-group-item" appBackground [correctAnswer]="question.correct">
+                            <input type="radio" name="options" (change)= "onAnswer(question.correct)" [disabled]="answerSelected"/>
+                            {{ question.option }}
+                        </li>
+                    </label>
+                </ul>
+            </div>
+            <br/>
+            <div *ngIf="counter > 9" class="d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Show Results
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your Quiz Result</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Correct Answers: {{ correctAnswers }}</p>
+                        <br/>
+                        <p>Incorrect Answers: {{ incorrectAnswers }}</p>
+                        <br/>
+                        <p> Result: {{ result }}</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
